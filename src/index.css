@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f111a 0%, #1b1e2b 50%, #222436 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-moonlight-cyan via-primary to-moonlight-purple bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    background: rgba(34, 36, 54, 0.4);
+  }
+  
+  .moonlight-glow {
+    box-shadow: 0 0 20px rgba(130, 170, 255, 0.3), 0 0 40px rgba(192, 153, 255, 0.2);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c770f0;
+}
