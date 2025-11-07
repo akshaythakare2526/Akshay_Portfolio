@@ -1,9 +1,18 @@
 import { motion } from 'framer-motion';
 import Section from '../components/Section';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
+    {
+      title: 'Quiz Application',
+      description: 'A dynamic and user-friendly web platform built using ASP.NET Core MVC and Entity Framework Core, designed to make learning engaging through interactive MCQ-based quizzes. It offers secure authentication, timed exams, instant scoring, and leaderboards to track progress.',
+      image: '/Quiz.png',
+      technologies: ['ASP.NET Core MVC', 'Entity Framework Core', 'SQL Server', 'Authentication'],
+      github: 'https://github.com/akshaythakare2526/QuizApplication',
+  readMore: '/projects/quiz-application',
+    },
     {
       title: 'Department Management System',
       description: 'A comprehensive single-page web application using React and .NET Web API to centralize academic department operations. Implemented role-based authentication for Students, Faculty, and Admin with secure access control. Created modules for attendance tracking, timetables, notices, faculty directories, and alumni networking.',
@@ -93,15 +102,37 @@ const Projects = () => {
                       <FiGithub size={20} />
                       <span className="text-sm font-medium">Code</span>
                     </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-                    >
-                      <FiExternalLink size={20} />
-                      <span className="text-sm font-medium">Live Demo</span>
-                    </a>
+                    {project.readMore ? (
+                      typeof project.readMore === 'string' && project.readMore.startsWith('/') ? (
+                        <Link
+                          to={project.readMore}
+                          className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                        >
+                          <FiExternalLink size={20} />
+                          <span className="text-sm font-medium">Read More</span>
+                        </Link>
+                      ) : (
+                        <a
+                          href={project.readMore}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                        >
+                          <FiExternalLink size={20} />
+                          <span className="text-sm font-medium">Read More</span>
+                        </a>
+                      )
+                    ) : project.demo ? (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                      >
+                        <FiExternalLink size={20} />
+                        <span className="text-sm font-medium">Live Demo</span>
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </motion.div>

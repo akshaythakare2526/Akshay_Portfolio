@@ -14,6 +14,8 @@ const Footer = () => {
     <footer className="bg-dark-light border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-lg font-semibold">Find Me On</h3>
+          <p className="text-gray-400">Feel free to connect with me</p>
           {/* Social Links */}
           <div className="flex space-x-6">
             {socialLinks.map((social) => (
