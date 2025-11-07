@@ -7,6 +7,7 @@ import About from './pages/About.tsx';
 import Projects from './pages/Projects.tsx';
 import Resume from './pages/Resume.tsx';
 import QuizApplicationDetails from './pages/QuizApplicationDetails.tsx';
+import BudgetWiseDetails from './pages/BudgetWiseDetails.tsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects/quiz-application" element={<QuizApplicationDetails />} />
+            <Route path="/projects/budgetwise" element={<BudgetWiseDetails />} />
           </Routes>
           <Footer />
         </div>
