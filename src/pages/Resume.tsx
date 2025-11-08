@@ -4,7 +4,7 @@ import { FiDownload } from 'react-icons/fi';
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Akshay Thakare.pdf';
+    link.href = './Akshay Thakare.pdf';
     link.download = 'Akshay_Thakare_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -49,7 +49,7 @@ const Resume = () => {
             className="glass-effect rounded-2xl overflow-hidden shadow-2xl border border-moonlight-cyan/20"
           >
             <iframe
-              src="/Akshay Thakare.pdf"
+              src="./Akshay Thakare.pdf"
               className="w-full h-[85vh] rounded-2xl"
               title="Resume"
             />

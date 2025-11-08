@@ -250,7 +250,7 @@ const Home = () => {
 
                     {/* Your PNG Image */}
                     <motion.img
-                      src="/developer-illustration.png"
+                      src="./developer-illustration.png"
                       alt="Akshay Thakare Illustration"
                       className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
                       style={{

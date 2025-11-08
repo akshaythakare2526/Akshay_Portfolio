@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: 'Quiz Application',
       description: 'A dynamic and user-friendly web platform built using ASP.NET Core MVC and Entity Framework Core, designed to make learning engaging through interactive MCQ-based quizzes. It offers secure authentication, timed exams, instant scoring, and leaderboards to track progress.',
-      image: '/Quiz.png',
+      image: './Quiz.png',
       technologies: ['ASP.NET Core MVC', 'Entity Framework Core', 'SQL Server', 'Authentication'],
       github: 'https://github.com/akshaythakare2526/QuizApplication',
   readMore: '/projects/quiz-application',

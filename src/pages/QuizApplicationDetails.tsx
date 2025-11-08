@@ -24,7 +24,7 @@ const QuizApplicationDetails = () => {
             </div>
             <motion.div initial={{ opacity:0, scale:0.95 }} animate={{ opacity:1, scale:1 }} className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-moonlight-blue/30 to-moonlight-purple/30 blur-3xl rounded-2xl" />
-              <img src="/Quiz.png" alt="Quiz Application" className="relative rounded-2xl w-full shadow-xl ring-1 ring-moonlight-cyan/30" />
+              <img src="./Quiz.png" alt="Quiz Application" className="relative rounded-2xl w-full shadow-xl ring-1 ring-moonlight-cyan/30" />
             </motion.div>
           </div>
 

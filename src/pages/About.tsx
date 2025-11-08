@@ -223,7 +223,7 @@ const About = () => {
                   }}
                 >
                   <motion.img
-                    src="/boy1.png"
+                    src="./boy1.png"
                     alt="Akshay Thakare - Full Stack & CRM Developer"
                     className="w-full h-full object-cover rounded-full"
                     animate={{ 

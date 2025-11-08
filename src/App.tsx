@@ -11,7 +11,7 @@ import BudgetWiseDetails from './pages/BudgetWiseDetails.tsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Akshay_Portfolio">
       <div className="min-h-screen bg-dark relative">
         <StarfieldBackground />
         <div className="relative z-10">
