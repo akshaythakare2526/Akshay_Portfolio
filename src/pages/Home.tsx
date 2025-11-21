@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiMoon, FiStar, FiCode, FiZap } from 'react-icons/fi';
+import { FiArrowRight, FiStar, FiCode } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -59,6 +59,7 @@ const Home = () => {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <br />  <br /><br />  <br />
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <motion.div
@@ -83,10 +84,10 @@ const Home = () => {
                       repeatDelay: 1
                     }}
                   >
-                    <FiMoon className="text-moonlight-cyan" size={28} />
+                    <span className="text-3xl">👨‍💻</span>
                   </motion.div>
                   <h1 className="font-bold text-gray-200 flex items-center gap-2">
-                    <span>Hi There!</span>
+                    <span>Hi There! 👋</span>
                     <motion.span
                       animate={{
                         rotate: [0, 14, -8, 14, -4, 10, 0],
@@ -96,9 +97,9 @@ const Home = () => {
                         repeat: Infinity,
                         repeatDelay: 1
                       }}
-                      className="inline-block origin-bottom-right"
+                      className="inline-block origin-bottom-right text-3xl"
                     >
-                      👋🏻
+                      ✨
                     </motion.span>
                   </h1>
                 </motion.div>
@@ -128,15 +129,15 @@ const Home = () => {
                   <FiCode className="text-moonlight-cyan hidden sm:block" size={32} />
                   <TypeAnimation
                     sequence={[
-                      'Software Engineer',
+                      '💼 Software Engineer',
                       1800,
-                      'Full Stack Developer',
+                      '🚀 Full Stack Developer',
                       1800,
-                      'D365 Technical Consultant',
+                      '⚡ D365 Technical Consultant',
                       1800,
-                      'React.js Developer',
+                      '⚛️ React.js Developer',
                       1800,
-                      '.NET Core Developer',
+                      '🔷 .NET Core Developer',
                       1800,
                     ]}
                     wrapper="span"
@@ -165,7 +166,7 @@ const Home = () => {
                       transition={{ duration: 0.3 }}
                     />
                     <span className="relative z-10 flex items-center gap-2">
-                      <FiZap />
+                      🚀
                       View My Work
                       <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -173,10 +174,11 @@ const Home = () => {
                 </Link>
                 <Link to="/about">
                   <motion.button
-                    className="inline-flex items-center px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white/10 transition-all border border-moonlight-cyan/30"
+                    className="inline-flex items-center gap-2 px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white/10 transition-all border border-moonlight-cyan/30"
                     whileHover={{ scale: 1.05, y: -2, borderColor: 'rgba(134, 225, 252, 0.6)' }}
                     whileTap={{ scale: 0.95 }}
                   >
+                    <span>👤</span>
                     About Me
                   </motion.button>
                 </Link>
@@ -490,9 +492,9 @@ const Home = () => {
                   }}
                 >
                   <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                    I'm a <span className="text-moonlight-cyan font-semibold">Software Engineer</span> who loves transforming ideas into reliable, scalable products. Over time, I've explored several technologies and found my passion in building{' '}
-                    <span className="text-moonlight-purple font-semibold">high-performance systems</span> and{' '}
-                    <span className="text-accent font-semibold">intuitive user experiences</span>.
+                    💻 I'm a <span className="text-moonlight-cyan font-semibold">Software Engineer</span> who loves transforming ideas into reliable, scalable products. Over time, I've explored several technologies and found my passion in building{' '}
+                    <span className="text-moonlight-purple font-semibold">⚡ high-performance systems</span> and{' '}
+                    <span className="text-accent font-semibold">✨ intuitive user experiences</span>.
                   </p>
                 </motion.div>
 
@@ -508,8 +510,8 @@ const Home = () => {
                   }}
                 >
                   <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                    Results-driven <span className="text-moonlight-purple font-semibold">Full Stack Developer</span> specializing in{' '}
-                    <span className="gradient-text font-semibold">.NET Core, ASP.NET MVC, React.js, and SQL Server</span>. 
+                    🎯 Results-driven <span className="text-moonlight-purple font-semibold">Full Stack Developer</span> specializing in{' '}
+                    <span className="gradient-text font-semibold">🔷 .NET Core, 🌐 ASP.NET MVC, ⚛️ React.js, and 🗄️ SQL Server</span>. 
                     Experienced in designing scalable web applications, creating RESTful APIs, and delivering user-focused front-end interfaces.
                   </p>
                 </motion.div>

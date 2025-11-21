@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 import Section from '../components/Section';
-import { FiBriefcase, FiCheckCircle } from 'react-icons/fi';
+import { FiCheckCircle } from 'react-icons/fi';
 import {
   FaReact,
-  FaNode,
   FaGitAlt,
   FaJs,
   FaHtml5,
@@ -20,7 +19,6 @@ import {
   SiMongodb,
   SiPostgresql,
   SiNextdotjs,
-  SiGraphql,
   SiMicrosoftazure,
   SiCsharp,
   SiDotnet,
@@ -45,14 +43,11 @@ const About = () => {
     { name: 'HTML5', icon: FaHtml5, color: '#E34F26' },
     { name: 'CSS3', icon: FaCss3Alt, color: '#1572B6' },
     { name: 'Bootstrap', icon: FaBootstrap, color: '#7952B3' },
-    { name: 'Node.js', icon: FaNode, color: '#339933' },
     { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
     { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' },
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
     { name: 'SQL Server', icon: SiPostgresql, color: '#CC2927' },
-    { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
     { name: 'Azure', icon: SiMicrosoftazure, color: '#0078D4' },
-
     { name: 'Git', icon: FaGitAlt, color: '#F05032' },
   ];
 
@@ -115,14 +110,13 @@ const About = () => {
                 </h1>
               </div>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hi everyone! 👋
-                I’m <span className="text-primary font-semibold">Akshay Thakare</span> from <span className="text-secondary font-semibold">Wardha, Maharashtra, India</span>. I’m a passionate <span className="text-primary font-semibold">Full Stack & CRM Developer.</span> I love to explore new technologies and solving real-world problems through clean, efficient code.
+                👋 Hi everyone! I'm <span className="text-primary font-semibold">Akshay Thakare</span> from <span className="text-secondary font-semibold">📍 Wardha, Maharashtra, India</span>. I'm a passionate <span className="text-primary font-semibold">💻 Full Stack & CRM Developer</span> who loves to explore new technologies 🚀 and solve real-world problems through clean, efficient code 🎯.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Even though I hold a <span className="text-primary font-semibold">B.Tech degree in Mechanical Engineering</span>, my true interest has always been in technology. During my college years, I discovered my passion for coding — and since then, I’ve been continuously learning, building, and improving my skills in <span className="text-secondary font-semibold">.NET Core, ASP.NET MVC, React.js, SQL Server, and Dynamics 365 CRM</span>.
+                🎓 Even though I hold a <span className="text-primary font-semibold">B.Tech degree in Mechanical Engineering</span>, my true interest has always been in technology 💡. During my college years, I discovered my passion for coding 💖 — and since then, I've been continuously learning 📚, building 🔨, and improving my skills in <span className="text-secondary font-semibold">.NET Core, ASP.NET MVC, React.js, SQL Server, and Dynamics 365 CRM</span>.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Outside of coding, I enjoy things that keep me inspired and creative — like listening to music 🎧, playing games 🎮, and staying curious about the latest tech trends.
+                🎨 Outside of coding, I enjoy things that keep me inspired and creative — like listening to music 🎧, playing games 🎮, exploring new tech trends 🔍, and connecting with fellow developers 🤝.
               </p>
             </motion.div>
 
@@ -271,7 +265,7 @@ const About = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
-              <FiBriefcase className="text-primary" /> 💼 Professional Experience
+              💼 <span className="gradient-text">Professional Experience</span>
             </h2>
             <motion.div
               className="glass-effect p-6 rounded-xl"
@@ -282,10 +276,19 @@ const About = () => {
             >
               <div className="flex flex-wrap items-start justify-between gap-3 mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-white">Software Developer</h3>
-                  <p className="text-primary font-semibold">SR Management Technology Consulting, Hyderabad</p>
+                  <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                    <span className="text-2xl">👨‍💻</span>
+                    Software Developer
+                  </h3>
+                  <p className="text-primary font-semibold flex items-center gap-2">
+                    <span>🏢</span>
+                    SR Management Technology Consulting, Hyderabad
+                  </p>
                 </div>
-                <span className="text-gray-400 text-sm">Current Role</span>
+                <span className="px-3 py-1 text-sm bg-green-500/20 text-green-400 rounded-full border border-green-500/30 flex items-center gap-1">
+                  <span className="animate-pulse">🟢</span>
+                  Current Role
+                </span>
               </div>
               <motion.ul
                 className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 text-gray-300"
@@ -327,7 +330,7 @@ const About = () => {
           {/* Skills */}
           <div>
             <h2 className="text-3xl font-bold text-center mb-12">
-              Professional <span className="gradient-text">Skillset</span>
+              <span className="text-4xl">🛠️</span> Professional <span className="gradient-text">Skillset</span> <span className="text-4xl">⚡</span>
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {skills.map((skill, index) => (
@@ -356,7 +359,7 @@ const About = () => {
           {/* Tools */}
           <div className="mt-20">
             <h2 className="text-3xl font-bold text-center mb-12">
-              <span className="gradient-text">Tools</span> & Technologies I use
+              <span className="text-4xl">🔧</span> <span className="gradient-text">Tools</span> & Technologies I Use <span className="text-4xl">💡</span>
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
               {tools.map((tool, index) => (
@@ -384,7 +387,7 @@ const About = () => {
           {/* Education */}
           <div className="mt-20">
             <h2 className="text-3xl font-bold text-center mb-12">
-              <span className="gradient-text">Education</span>
+              <span className="text-4xl">🎓</span> <span className="gradient-text">Education</span> <span className="text-4xl">📚</span>
             </h2>
             <div className="max-w-4xl mx-auto space-y-6">
               {education.map((edu, index) => (

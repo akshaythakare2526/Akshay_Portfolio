@@ -14,8 +14,16 @@ const Footer = () => {
     <footer className="bg-dark-light border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-lg font-semibold">Find Me On</h3>
-          <p className="text-gray-400">Feel free to connect with me</p>
+          <h3 className="text-lg font-semibold flex items-center gap-2">
+            <span className="text-xl">🌟</span>
+            Find Me On
+            <span className="text-xl">🌟</span>
+          </h3>
+          <p className="text-gray-400 flex items-center gap-2">
+            <span>💬</span>
+            Feel free to connect with me
+            <span>🤝</span>
+          </p>
           {/* Social Links */}
           <div className="flex space-x-6">
             {socialLinks.map((social) => (
@@ -35,10 +43,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center">
             <p className="text-gray-400 text-sm">
-              Designed and Developed by <span className="text-primary font-semibold">Akshay Thakare</span>
+              <span>💻</span> Designed and Developed with <span className="text-red-500">❤️</span> by <span className="text-primary font-semibold">Akshay Thakare</span>
             </p>
             <p className="text-gray-500 text-xs mt-1">
-              Copyright © {currentYear} AT
+              Copyright © {currentYear} AT ⚡
             </p>
           </div>
         </div>

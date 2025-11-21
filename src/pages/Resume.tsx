@@ -35,8 +35,9 @@ const Resume = () => {
                 transition={{ duration: 0.3 }}
               />
               <span className="relative z-10 flex items-center gap-3">
-                <FiDownload size={24} />
+                📄
                 Download Resume
+                <FiDownload size={24} />
               </span>
             </motion.button>
           </div>

@@ -43,10 +43,10 @@ const Projects = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              My Recent <span className="gradient-text">Works</span>
+              <span className="text-5xl">🚀</span> My Recent <span className="gradient-text">Works</span> <span className="text-5xl">💼</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Here are a few projects I've worked on recently
+              Here are a few projects I've worked on recently ✨
             </p>
           </div>
 
