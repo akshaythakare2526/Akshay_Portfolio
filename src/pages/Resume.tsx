@@ -50,7 +50,7 @@ const Resume = () => {
             className="glass-effect rounded-2xl overflow-hidden shadow-2xl border border-moonlight-cyan/20"
           >
             <iframe
-              src="./Akshay Thakare.pdf"
+              src="./Akshay Thakare Resume_Dec_2025.pdf"
               className="w-full h-[85vh] rounded-2xl"
               title="Resume"
             />
